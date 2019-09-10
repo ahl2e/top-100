@@ -1,3 +1,33 @@
 // Place all the styles related to the Wines controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wine-index-item{
+  display: flex;
+  flex-direction: row;
+    p {
+      margin-right: 5px;
+    }
+}
+
+#wines-index-key{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  p {
+    margin-right: 5px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+#wines-index-container{
+  border: 2px solid gray;
+  overflow: auto;
+  height: 500px;
+  width: 80%;
+  margin-left: 10%;
+}
+#wines-index-list{
+  overflow: auto;
+}

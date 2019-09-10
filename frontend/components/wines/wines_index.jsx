@@ -9,7 +9,6 @@ class WinesIndex extends React.Component {
     }
 
   componentDidMount(){
-    debugger
     this.props.fetchAllWines();
   }
 
@@ -18,11 +17,22 @@ class WinesIndex extends React.Component {
     var wines = this.props.wines.map((wine, idx) => <WineIndexItem wine={wine} key={idx}/>);
     if (this.props.wines.length > 0){
       return (
-    <div>
-      <ul>
-        {wines}
-      </ul>
-    </div>
+      <div id='wines-index-container'>
+        <div id='wines-index-key'>
+          <p>score</p>
+          <p>winery</p>
+          <p>wine</p>
+          <p>vintage</p>
+          <p>color</p>
+          <p>region</p>
+        </div>
+
+        <div id='wines-index-list'>
+          <ul>
+            {wines}
+          </ul>
+        </div>
+      </div>
   )
     }else{
       return (

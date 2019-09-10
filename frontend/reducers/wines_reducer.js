@@ -5,7 +5,6 @@ const WinesReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
   switch (action.type) {
     case RECEIVE_ALL_WINES:
-    debugger
       return action.wines;
     default:
       return oldState;

@@ -15,7 +15,6 @@ export const fetchWineNote = (id) => dispatch => {
 
 
 export const receiveAllWines = (wines) => {
-  debugger
   return{
     type: RECEIVE_ALL_WINES,
     wines:wines
