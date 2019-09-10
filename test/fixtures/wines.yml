@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  winery_full: MyString
+  wine_full: MyString
+  vintage: 1
+  note: MyString
+  taster_initials: MyString
+  color: MyString
+  country: MyString
+  region: MyString
+  score: 1
+  price: 1
+  issue_date: 2019-09-09
+  top_100_year: 1
+  top100_rank: 1
+
+two:
+  id: 1
+  winery_full: MyString
+  wine_full: MyString
+  vintage: 1
+  note: MyString
+  taster_initials: MyString
+  color: MyString
+  country: MyString
+  region: MyString
+  score: 1
+  price: 1
+  issue_date: 2019-09-09
+  top_100_year: 1
+  top100_rank: 1

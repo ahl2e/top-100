@@ -1,0 +1,87 @@
+<%= form_with(model: wine, local: true) do |form| %>
+  <% if wine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wine.errors.count, "error") %> prohibited this wine from being saved:</h2>
+
+      <ul>
+      <% wine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :winery_full %>
+    <%= form.text_field :winery_full %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wine_full %>
+    <%= form.text_field :wine_full %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vintage %>
+    <%= form.number_field :vintage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_field :note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :taster_initials %>
+    <%= form.text_field :taster_initials %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issue_date %>
+    <%= form.date_select :issue_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :top_100_year %>
+    <%= form.number_field :top_100_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :top100_rank %>
+    <%= form.number_field :top100_rank %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

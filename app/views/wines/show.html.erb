@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @wine.id %>
+</p>
+
+<p>
+  <strong>Winery full:</strong>
+  <%= @wine.winery_full %>
+</p>
+
+<p>
+  <strong>Wine full:</strong>
+  <%= @wine.wine_full %>
+</p>
+
+<p>
+  <strong>Vintage:</strong>
+  <%= @wine.vintage %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @wine.note %>
+</p>
+
+<p>
+  <strong>Taster initials:</strong>
+  <%= @wine.taster_initials %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @wine.color %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @wine.country %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @wine.region %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @wine.score %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @wine.price %>
+</p>
+
+<p>
+  <strong>Issue date:</strong>
+  <%= @wine.issue_date %>
+</p>
+
+<p>
+  <strong>Top 100 year:</strong>
+  <%= @wine.top_100_year %>
+</p>
+
+<p>
+  <strong>Top100 rank:</strong>
+  <%= @wine.top100_rank %>
+</p>
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>

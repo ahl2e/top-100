@@ -1,7 +1,15 @@
+// export const fetchAllWines = () => {
+//   fetch('/api/wines')
+//   .then(res => res.json())//response type
+//   .then(data => console.log(data)); //log the data;
+// };
+
+
 export const fetchAllWines = () => {
-  fetch('https://top-100-example.s3.amazonaws.com/t100_2018.json')
-  .then(res => res.json())//response type
-  .then(data => console.log(data)); //log the data;
+  return $.ajax({
+    method: "GET",
+    url: 'api/wines'
+  });
 };
 
 export const fetchWineNote = (wineId) => {

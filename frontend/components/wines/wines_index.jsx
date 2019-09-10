@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import WineIndexItem from './wine_index_item';
 
 
-class VoterIndex extends React.Component {
+class WinesIndex extends React.Component {
   constructor(props){
       super(props);
     }
@@ -25,9 +25,13 @@ class VoterIndex extends React.Component {
     </div>
   )
     }else{
-      return null;
+      return (
+        <div>
+        <p>No wine here</p>
+        </div>
+      );
     }
   }
 }
 
-export default WineIndex;
+export default WinesIndex;

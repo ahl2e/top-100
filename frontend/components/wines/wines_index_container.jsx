@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
-import {fetchAllWines} from '../actions/wine_actions';
-import WineIndex from './wine_index';
+import {fetchAllWines} from '../../actions/wine_actions';
+import WinesIndex from './wines_index';
 
 const mapStateToProps = (state) => {
   return({
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => {
   });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(WineIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(WinesIndex);

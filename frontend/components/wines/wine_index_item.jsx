@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const WineIndexItem = (props) => {
-  const voter = props.voter;
+  const wine = props.wine;
   return(
     <div className='wine-index-item'>
       <div id='wine-index-item-name'>
