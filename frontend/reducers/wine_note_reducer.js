@@ -4,11 +4,9 @@ import {RECEIVE_WINE_NOTE, REMOVE_WINE_NOTE} from '../actions/wine_actions';
 const noteReducer = (oldState = {}, action) => {
   switch (action.type) {
     case RECEIVE_WINE_NOTE:
-      return merge({}, oldState, {[action.note.id]: action.note});
+      return action.wine;
     case REMOVE_WINE_NOTE:
-    const newState = merge({}, state);
-    delete newState[action.note.id];
-    return newState;
+    return{}
     default:
       return oldState;
   }

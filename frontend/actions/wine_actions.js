@@ -9,8 +9,10 @@ export const fetchAllWines = () => dispatch => {
 };
 
 export const fetchWineNote = (id) => dispatch => {
-  return WineApiUtil.fetchWineNote(id).then(note => dispatch(recceiveWineNote(note)));
+  return WineApiUtil.fetchWineNote(id).then(note => dispatch(receiveWineNote(note)));
 };
+
+export const spotlightWine = (wine) => dispatch =>dispatch(receiveWineNote(wine));
 
 
 
@@ -21,10 +23,10 @@ export const receiveAllWines = (wines) => {
   };
 };
 
-export const recceiveWineNote = (note) => {
+export const receiveWineNote = (wine) => {
   return{
     type: RECEIVE_WINE_NOTE,
-    note:note
+    wine
   };
 };
 

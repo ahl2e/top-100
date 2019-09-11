@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import WineIndexItem from './wine_index_item';
+import WineIndexItemContainer from './wine_index_item_container';
 
 
 class WinesIndex extends React.Component {
@@ -14,17 +14,17 @@ class WinesIndex extends React.Component {
 
   render(){
 
-    var wines = this.props.wines.map((wine, idx) => <WineIndexItem wine={wine} key={idx}/>);
+    var wines = this.props.wines.map((wine, idx) => <WineIndexItemContainer wine={wine} key={idx}/>);
     if (this.props.wines.length > 0){
       return (
       <div id='wines-index-container'>
         <div id='wines-index-key'>
-          <p>score</p>
-          <p>winery</p>
-          <p>wine</p>
-          <p>vintage</p>
-          <p>color</p>
-          <p>region</p>
+          <p id='score'>Score</p>
+          <p id='winery'>Winery</p>
+          <p id='wine-name'>Wine</p>
+          <p id='vintage'>Vintage</p>
+          <p id='color'>Color</p>
+          <p id='region'>Region</p>
         </div>
 
         <div id='wines-index-list'>
